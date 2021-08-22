@@ -1,14 +1,7 @@
-/*
-
-Tera Lightbox JS
-Version 4.0
-Made by Themanoid
-
-*/
 
 (function($) {
 
-    "use strict"; // Strict mode
+    "use strict"; 
 
     var $lightboxContainer = $('<div id="lightbox"><div class="lightbox-inner"><div class="controls"><div class="galleryPrev"><span class="ion-ios-arrow-left"></span></div><div class="galleryNext"><span class="ion-ios-arrow-right"></span></div><div class="galleryClose ion-ios-close-empty fa-2x"></div></div></div>');
     if($('.lightbox').length)
@@ -28,13 +21,13 @@ Made by Themanoid
       return (url.match(p)) ? RegExp.$1 : false;
     }
 
-    $('.lightbox').each(function(){ // For each lightbox link
+    $('.lightbox').each(function(){ 
         var href = $(this).attr('href');
         var caption = $(this).attr('data-caption');
-        $gallery.push(href); // Push the img url to the gallery array
+        $gallery.push(href); 
         $galleryCaption.push(caption);
         $(this).attr('data-index', $galleryIndex);
-        $galleryIndex++; // Next index
+        $galleryIndex++; 
         $(this).on('click', function(e){
             e.stopImmediatePropagation();
             loadLightbox($(this).attr('data-index'),href,caption);
@@ -44,14 +37,14 @@ Made by Themanoid
 
     $('body').on('click', '.galleryClose', function(e) {
         $lightboxContainer.fadeOut(500, function(){
-            $(this).find('.lightbox-item').remove(); // Remove contents
-        }); // Fade out lightbox
+            $(this).find('.lightbox-item').remove(); 
+        }); 
     });
 
     $('html').on('click', 'body', function(e) {
        $lightboxContainer.fadeOut(500, function(){
-            $(this).find('.lightbox-item').remove(); // Remove contents
-        }); // Fade out lightbox
+            $(this).find('.lightbox-item').remove(); 
+        }); 
     });
 
     // Lightbox controls
@@ -61,13 +54,13 @@ Made by Themanoid
         var curIndex = parseInt($('.lightbox-item').attr('data-index'));
         var newIndex;
         if($(this).hasClass('galleryNext'))
-            newIndex = curIndex+1; // New index will be the next one
+            newIndex = curIndex+1; 
         else
-            newIndex = curIndex-1; // New index will be the previous one
-        if($gallery.length == newIndex) // If the last item is reached
-            newIndex = 0; // Set index to the first one
-        if(newIndex == -1) // If the first item is reached
-            newIndex = $gallery.length-1; // Set it to the last item
+            newIndex = curIndex-1; 
+        if($gallery.length == newIndex) 
+            newIndex = 0; 
+        if(newIndex == -1) 
+            newIndex = $gallery.length-1; 
         $('#lightbox [data-index]').css({
           'opacity': 0,
           'transform': 'scale(.95)',
@@ -77,7 +70,7 @@ Made by Themanoid
           'opacity' : 0,
         });
         setTimeout(function(){
-          $('#lightbox [data-index]').attr('data-index', newIndex); // Give the image a new index
+          $('#lightbox [data-index]').attr('data-index', newIndex); 
           loadLightbox(newIndex,$gallery[newIndex],$galleryCaption[newIndex]);
         }, 200);
     });

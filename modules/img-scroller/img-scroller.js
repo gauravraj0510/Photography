@@ -1,6 +1,6 @@
 ;(function($) {
 
-  'use strict'; // Using strict mode
+  'use strict'; 
 
   var controller = new ScrollMagic.Controller();
   var scroller = $('.img-scroller');
@@ -30,10 +30,8 @@
     }
   });
 
-  // Call trigger function on load
   scrollTrigger();
 
-  // The trigger function
   function scrollTrigger(){
     var newItem = scroller.find('li:nth-child('+scrollIndex+')');
     newItem.addClass('active').siblings().removeClass('active');

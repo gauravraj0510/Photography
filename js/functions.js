@@ -1,6 +1,6 @@
 ;(function($) {
 
-  'use strict'; // Using strict mode
+  'use strict'; 
 
   $('body').imagesLoaded( { background: '.hero' }, function() {
 
@@ -11,7 +11,6 @@
       $('body').addClass('loaded');
     }
 
-    // You can use anchor links, using the .anchor class
     $('.anchor').on('click', function(e){
       e.preventDefault();
       e.stopPropagation();
@@ -21,7 +20,6 @@
       });
     });
 
-    // Responsive navigation
 
     $('.responsive-nav').on('click', function(e){
       $(this).toggleClass('active');
@@ -55,16 +53,13 @@
       }
     });
 
-    // Initialize functions on scroll
     $(window).on('scroll', function(){
       window.requestAnimationFrame(parallax); // Parallax
     });
 
-    // Parallax background script, use the ".parallax" class.
     var parallaxSpeed = 0.15;
 
     function parallax(){
-      // Parallax scrolling function
       $('.parallax').each(function(){
         var el = $(this);
         var yOffset = $(window).scrollTop(),
@@ -78,19 +73,16 @@
       });
     }
 
-    // Fix for some browsers with a broken back button
     $(window).bind("pageshow", function(event) {
         if (event.originalEvent.persisted) {
             window.location.reload()
         }
     });
 
-    // Start animation
     var introTL = new TimelineLite,
         header = $('header');
     introTL.from(header, 1, {opacity:0, y: -100, ease:Power2.easeInOut},.6);
 
-    // Smooth transition links
     $('body').on('click', 'a[href!=#][data-toggle!=tab][data-toggle!=collapse][target!=_blank][class!=anchor]', function(e){
       var href = $(this).attr('href');
       var fadeTween = new TimelineMax()
@@ -101,7 +93,6 @@
       e.preventDefault();
     });
 
-    // Masonry grid
     var $grid = $('.img-grid');
     $grid.masonry({
       columnWidth: '.item-sizer',
