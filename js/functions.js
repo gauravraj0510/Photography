@@ -198,4 +198,10 @@ document.onkeydown = function (e) {
   }
 };
 
-document.getElementById('notClickable').ondragstart = function() { return false; };
+document.getElementById('notClickable1').ondragstart = function() { return false; };
+document.getElementById('notClickable2').ondragstart = function() { return false; };
+document.getElementById('notClickable3').ondragstart = function() { return false; };
+document.getElementById('notClickable4').ondragstart = function() { return false; };
+document.getElementById('notClickable5').ondragstart = function() { return false; };
+document.getElementById('notClickable6').ondragstart = function() { return false; };
+document.getElementById('notClickable7').ondragstart = function() { return false; };
