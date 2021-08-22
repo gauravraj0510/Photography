@@ -17,6 +17,9 @@
 
 -----------------------*/
 /* 00. Header */
+img {
+    pointer-events: none;
+}
 #main-header {
   margin: 20px 40px 0;
   position: relative;
@@ -1170,7 +1173,7 @@ Made by Themanoid
   -webkit-transition: all .3s;
   transition: all .3s;
   max-width: 90vw;
-  max-height: 90vh;
+  height: 100vh;
 }
 
 #lightbox img, #lightbox iframe, #lightbox video {
