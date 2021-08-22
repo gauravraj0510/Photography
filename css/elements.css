@@ -1077,7 +1077,7 @@ pre {
   padding:40px 0;
   background-color:#000000;
   color:#4b4c4d;
-  border-top: 0.5px solid white;
+  border-top: 0.1px solid rgba(209, 209, 209, 0.575);
 }
 
 .footer-basic ul {
