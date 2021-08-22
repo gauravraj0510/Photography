@@ -1,13 +1,4 @@
 @charset "UTF-8";
-/*--------------
----   Core   ---
----------------*/
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,600,700);
 html {
   font-family: sans-serif;
@@ -14720,4 +14711,17 @@ Made by Themanoid
   right: 0;
   text-align: center;
   padding: 20px;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(56, 56, 56);    /* color of the scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */
 }
