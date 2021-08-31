@@ -238,3 +238,7 @@ document.getElementById('notClickable37').ondragstart = function() { return fals
 document.getElementById('notClickable38').ondragstart = function() { return false; };
 document.getElementById('notClickable39').ondragstart = function() { return false; };
 document.getElementById('notClickable40').ondragstart = function() { return false; };
+document.getElementById('notClickable41').ondragstart = function() { return false; };
+document.getElementById('notClickable42').ondragstart = function() { return false; };
+document.getElementById('notClickable43').ondragstart = function() { return false; };
+document.getElementById('notClickable44').ondragstart = function() { return false; };
