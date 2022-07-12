@@ -159,86 +159,43 @@ $(document).bind("contextmenu", function (e) {
   e.preventDefault();
 });
 
-$(document).keydown(function (e) {
-  if (e.which === 123) {
-    return false;
-  }
-});
+// $(document).keydown(function (e) {
+//   if (e.which === 123) {
+//     return false;
+//   }
+// });
 
-document.onkeydown = function (e) {
-  if (event.keyCode == 123) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "E".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "S".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "H".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "A".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "F".charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "E".charCodeAt(0)) {
-    return false;
-  }
-};
+// document.onkeydown = function (e) {
+//   if (event.keyCode == 123) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.keyCode == "E".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.keyCode == "S".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.keyCode == "H".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.keyCode == "A".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.keyCode == "F".charCodeAt(0)) {
+//     return false;
+//   }
+//   if (e.ctrlKey && e.keyCode == "E".charCodeAt(0)) {
+//     return false;
+//   }
+// };
 
-document.getElementById('notClickable1').ondragstart = function() { return false; };
-document.getElementById('notClickable2').ondragstart = function() { return false; };
-document.getElementById('notClickable3').ondragstart = function() { return false; };
-document.getElementById('notClickable4').ondragstart = function() { return false; };
-document.getElementById('notClickable5').ondragstart = function() { return false; };
-document.getElementById('notClickable6').ondragstart = function() { return false; };
-document.getElementById('notClickable7').ondragstart = function() { return false; };
-document.getElementById('notClickable8').ondragstart = function() { return false; };
-document.getElementById('notClickable9').ondragstart = function() { return false; };
-document.getElementById('notClickable10').ondragstart = function() { return false; };
-document.getElementById('notClickable11').ondragstart = function() { return false; };
-document.getElementById('notClickable12').ondragstart = function() { return false; };
-document.getElementById('notClickable13').ondragstart = function() { return false; };
-document.getElementById('notClickable14').ondragstart = function() { return false; };
-document.getElementById('notClickable15').ondragstart = function() { return false; };
-document.getElementById('notClickable16').ondragstart = function() { return false; };
-document.getElementById('notClickable17').ondragstart = function() { return false; };
-document.getElementById('notClickable18').ondragstart = function() { return false; };
-document.getElementById('notClickable19').ondragstart = function() { return false; };
-document.getElementById('notClickable20').ondragstart = function() { return false; };
-document.getElementById('notClickable21').ondragstart = function() { return false; };
-document.getElementById('notClickable22').ondragstart = function() { return false; };
-document.getElementById('notClickable23').ondragstart = function() { return false; };
-document.getElementById('notClickable24').ondragstart = function() { return false; };
-document.getElementById('notClickable25').ondragstart = function() { return false; };
-document.getElementById('notClickable26').ondragstart = function() { return false; };
-document.getElementById('notClickable27').ondragstart = function() { return false; };
-document.getElementById('notClickable28').ondragstart = function() { return false; };
-document.getElementById('notClickable29').ondragstart = function() { return false; };
-document.getElementById('notClickable30').ondragstart = function() { return false; };
-document.getElementById('notClickable31').ondragstart = function() { return false; };
-document.getElementById('notClickable32').ondragstart = function() { return false; };
-document.getElementById('notClickable33').ondragstart = function() { return false; };
-document.getElementById('notClickable34').ondragstart = function() { return false; };
-document.getElementById('notClickable35').ondragstart = function() { return false; };
-document.getElementById('notClickable36').ondragstart = function() { return false; };
-document.getElementById('notClickable37').ondragstart = function() { return false; };
-document.getElementById('notClickable38').ondragstart = function() { return false; };
-document.getElementById('notClickable39').ondragstart = function() { return false; };
-document.getElementById('notClickable40').ondragstart = function() { return false; };
-document.getElementById('notClickable41').ondragstart = function() { return false; };
-document.getElementById('notClickable42').ondragstart = function() { return false; };
-document.getElementById('notClickable43').ondragstart = function() { return false; };
-document.getElementById('notClickable44').ondragstart = function() { return false; };
+
