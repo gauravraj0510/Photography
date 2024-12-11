@@ -18,7 +18,7 @@ function shuffle(array) {
 }
 
 // Shuffle the images
-const randomizedImages = shuffle(images).slice(0, 30);
+const randomizedImages = shuffle(images);
 
 // Generate the image grid
 randomizedImages.forEach((fileName, index) => {
@@ -38,21 +38,21 @@ randomizedImages.forEach((fileName, index) => {
   imageGrid.appendChild(anchor);
 });
 
-// Add event listener to the "Show new photos" button
-const randomizeButton = document.querySelector("#randomize-btn");
-randomizeButton.addEventListener("click", () => {
-  location.reload(); // Reload the page
-});
+// // Add event listener to the "Show new photos" button
+// const randomizeButton = document.querySelector("#randomize-btn");
+// randomizeButton.addEventListener("click", () => {
+//   location.reload(); // Reload the page
+// });
 
-// Add event listener to the "Show new photos" button 2
-const randomizeButton2 = document.querySelector("#randomize-btn2");
-randomizeButton2.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  }); // Scroll to the top of the page
-  // Delay the reload slightly to allow the smooth scroll to complete
-  setTimeout(() => {
-    location.reload(); // Reload the page
-  }, 500);
-});
+// // Add event listener to the "Show new photos" button 2
+// const randomizeButton2 = document.querySelector("#randomize-btn2");
+// randomizeButton2.addEventListener("click", () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth",
+//   }); // Scroll to the top of the page
+//   // Delay the reload slightly to allow the smooth scroll to complete
+//   setTimeout(() => {
+//     location.reload(); // Reload the page
+//   }, 500);
+// });
