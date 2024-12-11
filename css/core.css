@@ -14710,7 +14710,7 @@ Made by Themanoid
   bottom: 0;
   right: 0;
   text-align: center;
-  padding: 20px;
+  padding-bottom: 10px;
 }
 
 body::-webkit-scrollbar {

@@ -1,7 +1,9 @@
+// dynamic-grid.js
+
 const imageGrid = document.querySelector(".img-grid");
 
 // Define the number of images
-const n = 53; // Adjust this to the total number of images you have
+const n = 50; // Adjust this to the total number of images you have
 
 // Dynamically generate the array of image filenames
 const images = Array.from({ length: n }, (_, i) => `${i + 1}.jpg`);
@@ -25,9 +27,12 @@ randomizedImages.forEach((fileName, index) => {
   anchor.className = "item lightbox";
   anchor.dataset.caption = `Nature #${index + 1}`;
 
+  // Prevent drag event on the anchor
+  anchor.addEventListener("dragstart", (event) => event.preventDefault());
+
   const img = document.createElement("img");
-  img.draggable = false;
   img.src = `images/${fileName}`;
+  img.draggable = false; // Disable image dragging
 
   anchor.appendChild(img);
   imageGrid.appendChild(anchor);

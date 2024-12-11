@@ -1283,7 +1283,6 @@ Made by Themanoid
   bottom: 0;
   right: 0;
   text-align: center;
-  padding: 20px;
 }
 
 /*
@@ -1678,3 +1677,4 @@ ul.img-scroller.fs li .item {
   transition: all .3s;
   opacity: .5;
 }
+
