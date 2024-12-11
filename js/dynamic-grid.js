@@ -18,7 +18,7 @@ function shuffle(array) {
 }
 
 // Shuffle the images
-const randomizedImages = shuffle(images);
+const randomizedImages = shuffle(images).slice(0, 30);
 
 // Generate the image grid
 randomizedImages.forEach((fileName, index) => {
@@ -36,4 +36,10 @@ randomizedImages.forEach((fileName, index) => {
 
   anchor.appendChild(img);
   imageGrid.appendChild(anchor);
+});
+
+// Add event listener to the "Show new photos" button
+const randomizeButton = document.querySelector('#randomize-btn');
+randomizeButton.addEventListener('click', () => {
+  location.reload(); // Reload the page
 });
