@@ -3,7 +3,7 @@
 const imageGrid = document.querySelector(".img-grid");
 
 // Define the number of images
-const n = 50; // Adjust this to the total number of images you have
+const n = 180; // Adjust this to the total number of images you have
 
 // Dynamically generate the array of image filenames
 const images = Array.from({ length: n }, (_, i) => `${i + 1}.jpg`);
